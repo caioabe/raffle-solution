@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+#logo {
+  width: 300px;
+  margin: 8vh 0 10vh;
+}
+
+#app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#main-background {
+  width: 100%;
+  height: 55vh;
+  background: #0079a0; /* Old browsers */
+  background: -moz-linear-gradient(top, #0079a0 0%, #05b7bd 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0079a0 0%,#05b7bd 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #0079a0 0%,#05b7bd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#main-box {
+  background-color: #fff;
+  width: 95%;
+  height: 50vh;
+  box-shadow: 0 0 35px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.main-box__title {
+  font-weight: bold;
+  font-family: 'AmpleSoft';
+  margin-top: 40px;
+  text-align: center;
+}
+
+.main-box__sub-title {
+  font-weight: lighter;
+  font-family: 'AmpleSoft';
+  margin: 10px 30px 30px;
+  text-align: center;
+}
+
+.main-box__button {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'AmpleSoft';
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 70px;
+  border-radius: 4px;
+}
+
+.main-box__button.primary {
+  background-color: #0079a0;
+}
+
+@media (max-width: 599px) {
+  #logo {
+    margin: 2vh;
+    width: 200px;
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #main-box {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #main-box {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #main-box {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  #main-box {
+    width: 32%;
+  }
+}
